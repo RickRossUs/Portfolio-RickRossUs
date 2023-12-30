@@ -1,5 +1,5 @@
 <template>
-    <div id="about-me" class="about-me h-c">
+    <div id="information-me" class="information-me h-c">
         <h2>{{ $t("subtitle[0].name1") }} <span>{{ $t("subtitle[0].name2") }}</span></h2>
         <div class="h-c">
             <div class="descrption h-c">
@@ -9,7 +9,7 @@
                     :msg="$t('presentationAboutMe.btn')" 
                     icon="cloud-download" 
                     :btnActive="true" 
-                    href="/Curriculum/Currículum_Vitae_Ricardo_Sotolongo_Rosabal.pdf" 
+                    href="/curriculum/Currículum_Vitae_Ricardo_Sotolongo_Rosabal.pdf" 
                     download="Currículum_Vitae_Ricardo_Sotolongo_Rosabal.pdf"
                     target="_blank"
                 />
@@ -40,11 +40,8 @@ import DAboutMe from '@/data/DAboutMe';
 
 =============================================STYLE=========================================================================
 <style scoped lang="scss">
-.about-me {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1001;
+.information-me {
+    height: auto !important;
     flex-direction: column;
     padding: 0 3vw;
 

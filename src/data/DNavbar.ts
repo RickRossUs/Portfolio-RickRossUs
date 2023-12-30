@@ -12,7 +12,7 @@ const EnNavbar:Ref<Array<IMenu>> = ref([
         id: 1,
         name:'ABOUT ME',
         icon:'bi-person-fill',
-        link: '#about-me',
+        link: '#information-me',
     }, 
     {
         id: 2,
@@ -45,7 +45,7 @@ const EsNavbar:Ref<Array<IMenu>> = ref([
         id: 1,
         name:'SOBRE MI',
         icon:'bi-person-fill',
-        link: '#about-me',
+        link: '#information-me',
     }, 
     {
         id: 2,

@@ -1,8 +1,8 @@
 <template>
     <NavbarComponent/>
     <BannerComponent />
-    <TwoColumnContainer />
     <CAboutMe />
+    <TwoColumnContainer />
     <ContainerHorizontalComponent container="SKILLS"/>
     <ContainerHorizontalComponent container="SERVICES"/>
     <ContainerHorizontalComponent container="PORTFOLIO"/>

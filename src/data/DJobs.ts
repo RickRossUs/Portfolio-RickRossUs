@@ -35,7 +35,7 @@ const EsJobs:Ref<Array<IExperience>> = ref([
         job: 'ING. CIENCIAS INFORMÁTICAS',
         company: 'Universidad de las Ciencias Informaticas',
         date: 'Nov 2021 - Dic 2024',
-        description: 'Mi enfoque en el campo de la Informática en la Universidad de las Ciencias Informáticas ha sido una experiencia enriquecedora y dinámica. Durante este periodo, he profundizado mis conocimientos en áreas fundamentales como algoritmos, programación, sistemas informáticos y tecnologías emergentes. He tenido la oportunidad de participar en proyectos innovadores, desarrollar habilidades técnicas sólidas y explorar diversos aspectos de la ciencia computacional, lo que me ha proporcionado una base sólida para enfrentar desafíos en este campo en constante evolución',
+        description: 'Mi enfoque en el campo de la Informática en la Universidad de las Ciencias Informáticas ha sido una experiencia enriquecedora y dinámica. Durante este periodo, he profundizado mis conocimientos en áreas fundamentales como algoritmos, programación, sistemas informáticos y tecnologías emergentes. He tenido la oportunidad de participar en proyectos innovadores, desarrollar habilidades técnicas sólidas y explorar diversos aspectos de la ciencia computacional, lo que me ha proporcionado una excelente base para enfrentar desafíos en este campo en constante evolución',
         category: DCategory.EsCategories.value.find(category => category.id === 0) || DCategory.EsCategories.value[0],
     },
     {

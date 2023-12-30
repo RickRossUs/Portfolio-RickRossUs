@@ -36,7 +36,7 @@ const EsSubtitles:Ref<Array<ISubtitle>> = ref([
     },
     {
         id: 1,
-        name1: 'Educaión ',
+        name1: 'Educación ',
         name2: 'experiencia'
     },
     {
