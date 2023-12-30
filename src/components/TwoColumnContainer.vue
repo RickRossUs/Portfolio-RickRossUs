@@ -9,7 +9,7 @@
                     :msg="$t('presentationAboutMe.btn')" 
                     icon="cloud-download" 
                     :btnActive="true" 
-                    href="/curriculum/Currículum_Vitae_Ricardo_Sotolongo_Rosabal.pdf" 
+                    href="/curriculum/curriculum_vitae_ricardo_sotolongo_rosabal.pdf" 
                     download="Currículum_Vitae_Ricardo_Sotolongo_Rosabal.pdf"
                     target="_blank"
                 />
