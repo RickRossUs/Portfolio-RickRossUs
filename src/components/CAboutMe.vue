@@ -39,7 +39,7 @@ import DAboutMe from '@/data/DAboutMe';
 </script>
 
 =============================================STYLE=========================================================================
-<style scoped lang="scss">
+<!-- <style scoped lang="scss">
 .about-me {
     position: fixed;
     top: 0;
@@ -142,4 +142,4 @@ import DAboutMe from '@/data/DAboutMe';
 span {
     color: $primary-color;
 }
-</style>
+</style> -->
