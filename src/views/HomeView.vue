@@ -1,7 +1,7 @@
 <template>
     <NavbarComponent/>
     <BannerComponent />
-    <AboutMeComponent />
+    <CAboutMe />
     <TwoColumnContainer />
     <ContainerHorizontalComponent container="SKILLS"/>
     <ContainerHorizontalComponent container="SERVICES"/>
@@ -14,7 +14,7 @@
 
 <script lang="ts" setup>
 import BannerComponent from '@/components/BannerComponent.vue';
-import AboutMeComponent from '@/components/AboutMeComponent.vue';
+import CAboutMe from '@/components/CAboutMe.vue';
 import BubbleContactComponent from '@/components/BubbleContactComponent.vue';
 import BubbleLangComponent from '@/components/BubbleLangComponent.vue';
 import ContainerHorizontalComponent from '@/components/ContainerHorizontalComponent.vue';
