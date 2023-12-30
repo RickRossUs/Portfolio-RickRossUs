@@ -13,8 +13,8 @@
 </template>
 
 <script lang="ts" setup>
-import AboutMeComponent from '@/components/AboutMeComponent.vue';
 import BannerComponent from '@/components/BannerComponent.vue';
+import AboutMeComponent from '@/components/AboutMeComponent.vue';
 import BubbleContactComponent from '@/components/BubbleContactComponent.vue';
 import BubbleLangComponent from '@/components/BubbleLangComponent.vue';
 import ContainerHorizontalComponent from '@/components/ContainerHorizontalComponent.vue';
