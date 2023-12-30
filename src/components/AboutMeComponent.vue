@@ -5,14 +5,14 @@
             <div class="descrption h-c">
                 <h4>{{ $t("presentationAboutMe.hello") }} <span>RICK</span>ROSS</h4>
                 <p>{{ $t("presentationAboutMe.content") }}</p>
-                <ButtonComponent 
+                <!-- <ButtonComponent 
                     :msg="$t('presentationAboutMe.btn')" 
                     icon="cloud-download" 
                     :btnActive="true" 
                     href="/Curriculum/Currículum_Vitae_Ricardo_Sotolongo_Rosabal.pdf" 
                     download="Currículum_Vitae_Ricardo_Sotolongo_Rosabal.pdf"
                     target="_blank"
-                    />
+                /> -->
             </div>
             <div class="info h-c">
                 <ul>
