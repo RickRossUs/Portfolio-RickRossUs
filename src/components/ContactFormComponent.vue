@@ -60,13 +60,9 @@ const sendMessage = () => {
     contactForm?.classList.remove('true');
     
     const isEmailFilled:Boolean = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
-    const isPhoneFilled:Boolean = /^\+?\d{1,3}[-\.\s]??\(?\d{1,4}?\)?[-\.\s]??\d{1,4}[-\.\s]??\d{1,4}[-\.\s]??\d{1,9}$/.test(phone);
     
-    if (isPhoneFilled) {
-        sendToWhatsApp(phone, name, subject, textarea);
-    }
-    else if (isEmailFilled) {
-        sendEmail(email, name, subject, textarea);
+    if (isEmailFilled) {
+        sendEmail(email, name, subject, textarea, phone);
     }
     else {
         contactForm?.classList.add('false');
@@ -77,7 +73,7 @@ const sendMessage = () => {
 
 import emailjs from 'emailjs-com';
 
-const sendEmail = async (email:string, name:string = 'Cliente', subject:string = 'Requiere trabajo', message:string) => {
+const sendEmail = async (email:string, name:string = 'Cliente', subject:string = 'Requiere trabajo', message:string, phone:string) => {
     const contactForm = document.querySelector('.contact-form');
     contactForm?.classList.add('loading');
 
@@ -85,7 +81,7 @@ const sendEmail = async (email:string, name:string = 'Cliente', subject:string =
         const response = await emailjs.send('service_s5mg91a', 'template_c94su09', {
             from_name: name,
             subject: subject,
-            message: message,
+            message: message + '\n' + phone,
             reply_to: email,
         }, '3tPIGTSavHsTVsl2X');
 
@@ -100,13 +96,6 @@ const sendEmail = async (email:string, name:string = 'Cliente', subject:string =
         contactForm?.classList.remove('loading');
 
     }
-}
-
-const sendToWhatsApp = (phone:string, name:string='Cliente', subject:string='Requiere trabajo', message:string) => {
-    const whatsappLink = `https://wa.me/${phone}?text=${encodeURIComponent(name + '\n' + subject + '\n' + message)}`;
-
-    window.open(whatsappLink, '_blank');
-    document.querySelector('.contact-form')?.classList.remove('loading')
 }
 
 </script>

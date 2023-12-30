@@ -5,7 +5,7 @@
             <div class="descrption h-c">
                 <h4>{{ $t("presentationAboutMe.hello") }} <span>RICK</span>ROSS</h4>
                 <p>{{ $t("presentationAboutMe.content") }}</p>
-                <ButtonComponent 
+                <ButtonComponent  
                     :msg="$t('presentationAboutMe.btn')" 
                     icon="cloud-download" 
                     :btnActive="true" 
@@ -41,6 +41,10 @@ import DAboutMe from '@/data/DAboutMe';
 =============================================STYLE=========================================================================
 <style scoped lang="scss">
 .about-me {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
     flex-direction: column;
     padding: 0 3vw;
 

@@ -26,7 +26,5 @@ import TwoColumnContainer from '@/components/TwoColumnContainer.vue';
 </script>
 
 <style lang="scss">
-.h100 {
-    height: 100vh;
-}
+
 </style>

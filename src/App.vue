@@ -3,7 +3,6 @@
 </template>
 
 <script lang="ts" setup>
-import ProgessiveBarComponent from './components/ProgessiveBarComponent.vue';
 import HomeView from './views/HomeView.vue';
 
 
